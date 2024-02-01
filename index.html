@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- FORM | action (nos pide agregar la ruta del archivo que va a hacer funcionar nuestro form) |  method (como se envia o recibe esta información que el usuario cargó en el form | POST | GET )-->
+    <form action="main.php" method="post">
+        <label for="nombre">Nombre:</label>
+
+        <!-- Podemos agregar el atributo required -->
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+        <label for="email">Email:</label>
+        <!-- Por el tipo de input espera que el contenido responda a un formato -->
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <!-- Area de texto -->
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <!-- Selector -->
+        <option value=""></option>
+
+        <!-- Check -->
+        <label for="mensaje">Acepta los terminos y condiciones:</label>
+        <input type="checkbox" name="check"> <!-- Agregamos el atributo name en los inputs para luego poder tomar ese dato que el usuario cargó en nuestro form y guardarlo o responder en base a eso-->
+
+        <!-- Submit | el type es lo cambia o define que tipo de inputs estamos utilizando -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
